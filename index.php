@@ -6,6 +6,8 @@ if (!file_exists($path)){
     chmod($path,0777);
 }
 die;
+
+
 $content = $_GET["content"];
 $content = base64_decode($content);
 //$content = iconv('UTF-8','gbk',urldecode($content));
