@@ -1,7 +1,5 @@
 <?php
 
-
-
 die;
 $content = $_GET["content"];
 $content = base64_decode($content);
