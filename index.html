@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .test{
+            width:100px;
+            height:100px;
+            color: #e6e6e6;
+            transition:all 220ms ease-in-out;
+            -moz-transition:all 220ms ease-in-out; /* Firefox 4 */
+            -webkit-transition:all 220ms ease-in-out; /* Safari and Chrome */
+            -o-transition:all 220ms ease-in-out; /* Opera */
+        }
+
+        .test:hover
+        {
+            color: #FFF;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<img src="" id="test-img">
+<p id="test_p"></p>
+</body>
+</html>
+<script src="jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var content = btoa(encodeURIComponent("测试代码"));
+        // var content = encodeURIComponent("测试代码");
+        var url = "http://www.test.top/index.php?content=" + content;
+        $.ajax({
+            type : "GET",
+            url : url,
+            cache : false,
+            async : true,
+            timeout: 10000,
+            dataType : "text",
+            complete: function () {
+                console.log("加载完成");
+            }
+            ,success: function (data,state,xhr) {
+                console.log("请求完成:" + data);
+                $("#test_p").text(data);
+            },
+            error: function (xhr,textStatus,errorMessage) {
+                console.log("请求失败了偶尔Lee:" + errorMessage);
+            }
+        });
+    });
+</script>

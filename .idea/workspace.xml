@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d65e940-080a-4807-bb61-04a507a864b4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sabre/event" />
+      <path value="$PROJECT_DIR$/vendor/sabre/vobject" />
+      <path value="$PROJECT_DIR$/vendor/sabre/uri" />
+      <path value="$PROJECT_DIR$/vendor/sabre/xml" />
+      <path value="$PROJECT_DIR$/vendor/sabre/http" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sabre/dav" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/jonnyw/php-phantomjs" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/jakoch/phantomjs-installer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1Tj8cp2EtA3vkN4gX19wJ8dIeaS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d65e940-080a-4807-bb61-04a507a864b4" name="Default Changelist" comment="" />
+      <created>1573962225741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573962225741</updated>
+      <workItem from="1573962227051" duration="23000" />
+      <workItem from="1574431166234" duration="320000" />
+      <workItem from="1574431614166" duration="244000" />
+      <workItem from="1574589360983" duration="1308000" />
+      <workItem from="1577697540375" duration="1193000" />
+      <workItem from="1577700954171" duration="1192000" />
+      <workItem from="1577702278191" duration="395000" />
+      <workItem from="1586178617586" duration="1089000" />
+      <workItem from="1586231330929" duration="10930000" />
+      <workItem from="1586333567794" duration="8993000" />
+      <workItem from="1586369131663" duration="461000" />
+      <workItem from="1586436801039" duration="47210000" />
+      <workItem from="1586847966037" duration="5000" />
+      <workItem from="1586853861406" duration="13064000" />
+      <workItem from="1586948903267" duration="15663000" />
+      <workItem from="1587097514933" duration="29124000" />
+      <workItem from="1587305249106" duration="10279000" />
+      <workItem from="1587891033512" duration="2228000" />
+      <workItem from="1588245183699" duration="618000" />
+      <workItem from="1588247162551" duration="525000" />
+      <workItem from="1589006668959" duration="527000" />
+      <workItem from="1589008105372" duration="441000" />
+      <workItem from="1589026010720" duration="271000" />
+      <workItem from="1589092118977" duration="616000" />
+      <workItem from="1589112208452" duration="639000" />
+      <workItem from="1589262657511" duration="10465000" />
+      <workItem from="1589520584951" duration="9320000" />
+      <workItem from="1589542539614" duration="7000" />
+      <workItem from="1589544199414" duration="4226000" />
+      <workItem from="1589765045035" duration="3271000" />
+      <workItem from="1589904326826" duration="3800000" />
+      <workItem from="1589987392196" duration="8082000" />
+      <workItem from="1590013081205" duration="1123000" />
+      <workItem from="1590015344140" duration="1826000" />
+      <workItem from="1590050080392" duration="1103000" />
+      <workItem from="1590143820643" duration="6691000" />
+      <workItem from="1590427113068" duration="1028000" />
+      <workItem from="1590841491465" duration="13000" />
+      <workItem from="1591427836851" duration="418000" />
+      <workItem from="1591584782874" duration="923000" />
+      <workItem from="1591631185822" duration="391000" />
+      <workItem from="1591668960890" duration="694000" />
+      <workItem from="1591674106649" duration="3455000" />
+      <workItem from="1591770595952" duration="5586000" />
+      <workItem from="1591872045946" duration="2372000" />
+      <workItem from="1591978116227" duration="1062000" />
+      <workItem from="1592040310039" duration="1983000" />
+      <workItem from="1592109262954" duration="2013000" />
+      <workItem from="1592123252508" duration="2668000" />
+      <workItem from="1592202174833" duration="2305000" />
+      <workItem from="1592329304082" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="312" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587362269467">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="549" y="312" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.961@0.23.1680.961" timestamp="1587362269467" />
+    <state x="593" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587110598095">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="593" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.961@0.23.1680.961" timestamp="1587110598095" />
+    <state x="582" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586537142679">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="582" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.961@0.23.1680.961" timestamp="1586537142679" />
+    <state x="416" y="297" key="EditFileWatcherDialog" timestamp="1586687502054">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="416" y="297" key="EditFileWatcherDialog/0.23.1680.961@0.23.1680.961" timestamp="1586687502054" />
+    <state x="609" y="337" key="NewPhpClassDialog" timestamp="1591760525178">
+      <screen x="0" y="23" width="1680" height="978" />
+    </state>
+    <state x="609" y="332" key="NewPhpClassDialog/0.23.1680.961@0.23.1680.961" timestamp="1587110576568" />
+    <state x="609" y="337" key="NewPhpClassDialog/0.23.1680.978@0.23.1680.978" timestamp="1591760525178" />
+    <state x="673" y="439" key="NewPhpFileDialog" timestamp="1589904349224">
+      <screen x="0" y="23" width="1680" height="967" />
+    </state>
+    <state x="673" y="436" key="NewPhpFileDialog/0.23.1680.961@0.23.1680.961" timestamp="1587384813459" />
+    <state x="673" y="437" key="NewPhpFileDialog/0.23.1680.963@0.23.1680.963" timestamp="1587891312329" />
+    <state x="673" y="438" key="NewPhpFileDialog/0.23.1680.965@0.23.1680.965" timestamp="1589112266683" />
+    <state x="673" y="439" key="NewPhpFileDialog/0.23.1680.967@0.23.1680.967" timestamp="1589904349224" />
+    <state x="520" y="269" width="689" height="475" key="find.popup" timestamp="1590009607307">
+      <screen x="0" y="23" width="1680" height="967" />
+    </state>
+    <state x="520" y="267" width="689" height="472" key="find.popup/0.23.1680.961@0.23.1680.961" timestamp="1586854392352" />
+    <state x="520" y="269" width="689" height="475" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1590009607307" />
+    <state x="508" y="231" key="run.anything.popup" timestamp="1589537505201">
+      <screen x="0" y="23" width="1680" height="967" />
+    </state>
+    <state x="508" y="231" key="run.anything.popup/0.23.1680.967@0.23.1680.967" timestamp="1589537505201" />
+    <state x="509" y="236" width="670" height="690" key="search.everywhere.popup" timestamp="1591776132640">
+      <screen x="0" y="23" width="1680" height="979" />
+    </state>
+    <state x="509" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.961@0.23.1680.961" timestamp="1586857081449" />
+    <state x="509" y="234" width="670" height="681" key="search.everywhere.popup/0.23.1680.967@0.23.1680.967" timestamp="1589265261277" />
+    <state x="509" y="236" width="670" height="689" key="search.everywhere.popup/0.23.1680.978@0.23.1680.978" timestamp="1591761376304" />
+    <state x="509" y="236" width="670" height="690" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1591776132640" />
+  </component>
+</project>
