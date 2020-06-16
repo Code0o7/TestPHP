@@ -1,6 +1,9 @@
 <?php
 
-
+$path = "./test";
+if (!file_exists($path)){
+    mkdir($path);
+}
 die;
 $content = $_GET["content"];
 $content = base64_decode($content);
