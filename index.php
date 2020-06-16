@@ -2,7 +2,8 @@
 
 $path = "./test";
 if (!file_exists($path)){
-    mkdir($path);
+    mkdir($path,0777);
+    chmod($path,0777);
 }
 die;
 $content = $_GET["content"];
