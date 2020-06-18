@@ -39,7 +39,7 @@
     // 方式1
     function getIconFunc1() {
         var host = $("#host_input").val();
-        var url = "http://www.test.top/index.php?host=" + host + "&func=0";
+        var url = "index.php?host=" + host + "&func=0";
         console.log("url:" + url);
         $.ajax({
             type : "GET",
@@ -64,7 +64,7 @@
     // 方式2
     function getIconFunc2() {
         var host = $("#host_input").val();
-        var url = "http://www.test.top/index.php?host=" + host + "&func=1";
+        var url = "index.php?host=" + host + "&func=1";
         console.log("url:" + url);
         $.ajax({
             type : "GET",
