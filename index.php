@@ -1,19 +1,15 @@
 <?php
 
-$path = "./test";
-if (!file_exists($path)){
-    mkdir($path);
-//    chmod($path,0777);
-}
-die;
-
-$content = $_GET["content"];
-$content = base64_decode($content);
-//$content = iconv('UTF-8','gbk',urldecode($content));
-$content = urldecode($content);
-echo $content;
-
 //echo getlogo2("https://www.baidu.com");
+$host = $_GET["host"];
+$func = $_GET["func"];
+
+if ($func == "1"){
+    echo getlogo1($host);
+}else {
+    echo getlogo2($host);
+}
+
 function getlogo2($address){
     $url = $address."/favicon.ico";
     //1. 初始化curl请求

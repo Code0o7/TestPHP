@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./layui/css/layui.css">
     <style>
         .test{
             width:100px;
@@ -22,17 +23,24 @@
     </style>
 </head>
 <body>
-
-<img src="" id="test-img">
-<p id="test_p"></p>
+<img src="" id="test_img">
+<input value="https://www.baidu.com" style="width: 300px;margin-left: 20px" id="host_input" type="text" lay-verify="required" autocomplete="off" class="layui-input logo-input">
+<button style="margin-left: 20px;margin-top: 20px" onclick="getIconFunc1()" type="button" class="layui-btn layui-btn-primary">方式1</button>
+<button style="margin-left: 20px;margin-top: 20px" onclick="getIconFunc2()" type="button" class="layui-btn layui-btn-primary">方式2</button>
 </body>
 </html>
 <script src="jquery.min.js"></script>
+<script src="./layui/layui.js" charset="utf-8"></script>
 <script>
     $(document).ready(function () {
-        var content = btoa(encodeURIComponent("测试代码"));
-        // var content = encodeURIComponent("测试代码");
-        var url = "http://www.test.top/index.php?content=" + content;
+
+    });
+
+    // 方式1
+    function getIconFunc1() {
+        var host = $("#host_input").val();
+        var url = "http://www.test.top/index.php?host=" + host + "&func=0";
+        console.log("url:" + url);
         $.ajax({
             type : "GET",
             url : url,
@@ -44,12 +52,39 @@
                 console.log("加载完成");
             }
             ,success: function (data,state,xhr) {
-                console.log("请求完成:" + data);
-                $("#test_p").text(data);
+                console.log("成功：" + data);
+                $("#test_img").attr("src",data);
             },
             error: function (xhr,textStatus,errorMessage) {
                 console.log("请求失败了偶尔Lee:" + errorMessage);
             }
         });
-    });
+    }
+
+    // 方式2
+    function getIconFunc2() {
+        var host = $("#host_input").val();
+        var url = "http://www.test.top/index.php?host=" + host + "&func=1";
+        console.log("url:" + url);
+        $.ajax({
+            type : "GET",
+            url : url,
+            cache : false,
+            async : true,
+            timeout: 10000,
+            dataType : "text",
+            complete: function () {
+                console.log("加载完成");
+            }
+            ,success: function (data,state,xhr) {
+                console.log("成功：" + data);
+                $("#test_img").attr("src",data);
+            },
+            error: function (xhr,textStatus,errorMessage) {
+                console.log("请求失败了偶尔Lee:" + errorMessage);
+            }
+        });
+    }
+
+
 </script>
