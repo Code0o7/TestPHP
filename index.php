@@ -2,8 +2,7 @@
 
 //$cmd = 'rclone copy  BetterZip-4.2.5.zip  GDSuite:/test/';
 
-$cmd = 'cp ./BetterZip-4.2.5.zip  /root/test.zip';
-
+$cmd = 'cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  /root/test.zip';
 // 执行命令
 //putenv('DYLD_LIBRARY_PATH');
 exec($cmd,$result,$status);
