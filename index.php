@@ -18,5 +18,6 @@ if ($status == 0){
     echo "失败<br>";
     echo "<pre>";
     var_dump($result);
-    var_dump("结果:".$re);
+    echo "结果:<br>";
+    var_dump($re);
 }
