@@ -14,8 +14,8 @@ $cmd = 'cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip /root/test.zip';
 // 执行命令
 //putenv('DYLD_LIBRARY_PATH');
 //$re = exec($cmd,$result,$status);
-$re = system($cmd,$result);
-echo "结果:".$result;
+$re = shell_exec($cmd);
+echo "结果:";
 var_dump($re);
 die;
 
