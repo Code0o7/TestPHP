@@ -2,13 +2,13 @@
 
 //$cmd = 'rclone copy  BetterZip-4.2.5.zip  GDSuite:/test/';
 
-$path = "./test";
-if (!file_exists($path)){
-    mkdir($path);
-    chmod($path,0700);
-}
+//$path = "./test";
+//if (!file_exists($path)){
+//    mkdir($path);
+//    chmod($path,0700);
+//}
 
-$cmd = 'cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip /www/wwwroot/test.yycode.top/test/test.zip';
+$cmd = 'cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip /root/test.zip';
 
 //$cmd = "ps aux | head";
 // 执行命令
