@@ -3,7 +3,7 @@
 $cmd = 'rclone copy  BetterZip-4.2.5.zip  GDSuite:/test/';
 
 // 执行命令
-putenv('DYLD_LIBRARY_PATH');
+//putenv('DYLD_LIBRARY_PATH');
 exec($cmd,$result,$status);
 // 结果
 if ($status == 0){
