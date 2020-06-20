@@ -2,6 +2,7 @@
 
 $cmd = 'rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
 
+
 //$path = "./test";
 //if (!file_exists($path)){
 //    mkdir($path);
