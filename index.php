@@ -13,7 +13,11 @@ $cmd = 'cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip /root/test.zip';
 //$cmd = "ps aux | head";
 // 执行命令
 //putenv('DYLD_LIBRARY_PATH');
-$re = exec($cmd,$result,$status);
+//$re = exec($cmd,$result,$status);
+$re = system($cmd,$result);
+echo "结果:".$result;
+die;
+
 // 结果
 if ($status == 0){
     // 成功
