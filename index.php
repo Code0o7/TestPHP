@@ -1,6 +1,6 @@
 <?php
 
-$cmd = 'sudo -u www rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
+$cmd = 'sudo rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
 
 //$path = "./test";
 //if (!file_exists($path)){
