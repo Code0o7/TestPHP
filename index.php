@@ -16,6 +16,7 @@ $cmd = 'cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip /root/test.zip';
 //$re = exec($cmd,$result,$status);
 $re = system($cmd,$result);
 echo "结果:".$result;
+var_dump($re);
 die;
 
 // 结果
