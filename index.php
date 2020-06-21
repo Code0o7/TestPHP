@@ -2,7 +2,7 @@
 
 //$cmd = 'rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
 //$cmd = 'rclone delete GSuite:/blogImages/Test/IMG_0689.JPG -vvv';
-$cmd = 'rclone lsd GDSuite:/blogImages/';
+$cmd = 'rclone deletefile GSuite:/blogImages/Test/2.jpg';
 
 //$path = "./test";
 //if (!file_exists($path)){
