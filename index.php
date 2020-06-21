@@ -29,7 +29,14 @@ if ($status == 0){
         $dirArr = explode("-1",$item);
         foreach ($dirArr as $key=>$dir) {
             // 去掉首尾空格
-            $dirArr[$key] = trim($dir);
+            $dir = trim($dir);
+            // 去掉空字符串
+            if (strlen($dir) == 0){
+                unset($dirArr[$key]);
+            }else {
+                $dirArr[$key] = $dir;
+            }
+
         }
 //        $dirArr = implode("",$dirArr);
         $data[] = $dirArr;
