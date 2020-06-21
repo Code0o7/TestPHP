@@ -36,10 +36,15 @@ if ($status == 0){
             }else {
                 $dirArr[$key] = $dir;
             }
-
         }
-//        $dirArr = implode("",$dirArr);
-        $data[] = $dirArr;
+
+        $dirKey = "";
+        $dirValue = "";
+        if (count($dirArr) > 1){
+            $dirKey = $dirArr[0];
+            $dirValue = $dirArr[1];
+        }
+        $data[] = [$dirKey=>$dirValue];
     }
 
 
