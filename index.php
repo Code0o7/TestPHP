@@ -27,6 +27,10 @@ if ($status == 0){
     $data = [];
     foreach ($result as $item) {
         $dirArr = explode("-1",$item);
+        foreach ($dirArr as $key=>$dir) {
+            // 去掉首尾空格
+            $dirArr[$key] = trim($dir);
+        }
 //        $dirArr = implode("",$dirArr);
         $data[] = $dirArr;
     }
