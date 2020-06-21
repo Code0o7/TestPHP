@@ -24,9 +24,17 @@ $re = exec($cmd,$result,$status);
 // 结果
 if ($status == 0){
     // 成功
+    $data = [];
+    foreach ($result as $item) {
+        $dirArr = explode("-1",$item);
+        $dirArr = implode("",$dirArr);
+        $data[] = $dirArr;
+    }
+
+
     echo "成功<br>";
     echo "<pre>";
-    var_dump($result);
+    var_dump($data);
     var_dump("结果:".$re);
 }else {
     // 失败
