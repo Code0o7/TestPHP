@@ -1,7 +1,7 @@
 <?php
 
 //$cmd = 'rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
-$cmd = 'rclone lsd GDSuite:/blogImages/';
+$cmd = 'rclone ls GDSuite:/blogImages/Hexo博客迁移以及多终端同步';
 
 //$path = "./test";
 //if (!file_exists($path)){
