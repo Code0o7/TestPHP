@@ -38,13 +38,13 @@ if ($status == 0){
             }
         }
 
-        $dirKey = "";
-        $dirValue = "";
-        if (count($dirArr) > 1){
-            $dirKey = $dirArr[0];
-            $dirValue = $dirArr[1];
-        }
-        $data[] = [$dirKey=>$dirValue];
+//        $dirKey = "";
+//        $dirValue = "";
+//        if (count($dirArr) > 1){
+//            $dirKey = $dirArr[0];
+//            $dirValue = $dirArr[1];
+//        }
+        $data[] = $dirArr;//[$dirKey=>$dirValue];
     }
 
 
