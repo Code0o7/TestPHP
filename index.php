@@ -1,7 +1,7 @@
 <?php
 
 //$cmd = 'rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
-$cmd = 'rclone mkdir GDSuite:/blogImages/test';
+$cmd = 'rclone lsd GDSuite:/blogImages/';
 
 //$path = "./test";
 //if (!file_exists($path)){
