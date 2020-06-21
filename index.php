@@ -27,7 +27,7 @@ if ($status == 0){
     $data = [];
     foreach ($result as $item) {
         $dirArr = explode("-1",$item);
-        $dirArr = implode("",$dirArr);
+//        $dirArr = implode("",$dirArr);
         $data[] = $dirArr;
     }
 
