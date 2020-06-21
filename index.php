@@ -24,33 +24,26 @@ $re = exec($cmd,$result,$status);
 // 结果
 if ($status == 0){
     // 成功
-//    $data = [];
-//    foreach ($result as $item) {
-//        $dirArr = explode("-1",$item);
-//        foreach ($dirArr as $key=>$dir) {
-//            // 去掉首尾空格
-//            $dir = trim($dir);
-//            // 去掉空字符串
-//            if (strlen($dir) == 0){
-//                unset($dirArr[$key]);
-//            }else {
-//                $dirArr[$key] = $dir;
-//            }
-//        }
-//
-//        $dirKey = "";
-//        $dirValue = "";
-//        if (count($dirArr) > 1){
+    $data = [];
+    foreach ($result as $item) {
+        // 去掉首尾空格
+        $str = trim($item);
+        // 分割成数组
+        $array = explode(" ",$str);
+
+//        $fileTime = "";
+//        $fileName = "";
+//        if (count($array) > 1){
 //            $dirKey = $dirArr[1];
 //            $dirValue = $dirArr[2];
 //        }
-//        $data[] = [$dirKey=>$dirValue];
-//    }
+        $data[] = $array;
+    }
 
 
     echo "成功<br>";
     echo "<pre>";
-    var_dump($result);
+    var_dump($data);
     var_dump("结果:".$re);
 }else {
     // 失败
