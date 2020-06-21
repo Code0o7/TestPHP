@@ -1,7 +1,7 @@
 <?php
 
 //$cmd = 'rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
-$cmd = 'rclone lsl GDSuite:/blogImages/Hexo博客迁移以及多终端同步';
+$cmd = 'rclone delete GSuite:/blogImages/Test/IMG_0689.JPG';
 
 //$path = "./test";
 //if (!file_exists($path)){
@@ -24,26 +24,26 @@ $re = exec($cmd,$result,$status);
 // 结果
 if ($status == 0){
     // 成功
-    $data = [];
-    foreach ($result as $item) {
-        // 去掉首尾空格
-        $str = trim($item);
-        // 分割成数组
-        $array = explode(" ",$str);
-
+//    $data = [];
+//    foreach ($result as $item) {
+//        // 去掉首尾空格
+//        $str = trim($item);
+//        // 分割成数组
+//        $array = explode(" ",$str);
+//
 //        $fileTime = "";
 //        $fileName = "";
-//        if (count($array) > 1){
-//            $dirKey = $dirArr[1];
-//            $dirValue = $dirArr[2];
+//        if (count($array) > 3){
+//            $fileTime = $array[1]." ".$array[2];
+//            $fileName = $array[3];
 //        }
-        $data[] = $array;
-    }
+//        $data[$fileTime] = $fileName;
+//    }
 
 
     echo "成功<br>";
     echo "<pre>";
-    var_dump($data);
+    var_dump($result);
     var_dump("结果:".$re);
 }else {
     // 失败
