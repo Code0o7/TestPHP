@@ -9,6 +9,8 @@ if ($success){
     var_dump($result);
 }else {
     echo "失败";
+    echo "<pre>";
+    var_dump($result);
 }
 
 
