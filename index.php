@@ -1,8 +1,8 @@
 <?php
 
-$cmd = 'gclone copy GDSuiteTeam:{1UKB8f4tQaIfUhYFTvIFxbBaVt4dxTel3} GDSuiteTeam:test --drive-server-side-across-configs -P';
-echo $cmd;
-die;
+$cmd = 'gclone copy GDSuiteTeam:{1EnLOM8-Cvh9SkKIfft9Nq921PnX1JnHQ} GDSuiteTeam:test --drive-server-side-across-configs -P';
+$cmd .= " >> /test.txt 2>&1 &";
+
 exec($cmd,$result,$status);
 $success = $status == 0 ? true : false;
 if ($success){
