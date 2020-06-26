@@ -1,56 +1,23 @@
 <?php
 
-//$cmd = 'rclone copy  /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip  GDSuite:/test/';
-//$cmd = 'rclone delete GSuite:/blogImages/Test/IMG_0689.JPG -vvv';
-$cmd = 'rclone lsd GDSuite:/blogImages/';
+$url = 'https://drive.google.com/drive/folders/1UKB8f4tQaIfUhYFTvIFxbBaVt4dxTel3';
 
-//$path = "./test";
-//if (!file_exists($path)){
-//    mkdir($path);
-//    chmod($path,0700);
-//}
+//1. 初始化curl请求
+$ch = curl_init();
+//2. 设置请求的服务器地址
+curl_setopt($ch,CURLOPT_URL,$this->url);
+//3. 不管get、post，都跳过证书验证
+curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
+curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,false);
+//设置结果返回
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+$result = curl_exec($ch);
+$returnCode = curl_getinfo($ch,CURLINFO_HTTP_CODE);
+//4. 关闭资源
+curl_close($ch);
 
-//$cmd = 'sudo cp /www/wwwroot/test.yycode.top/BetterZip-4.2.5.zip /root/test.zip';
-
-//$cmd = "ps aux | head";
-// 执行命令
-//putenv('DYLD_LIBRARY_PATH');
-$re = exec($cmd,$result,$status);
-
-//$re = shell_exec($cmd);
-//echo "结果:";
-//var_dump($re);
-//die;
-
-// 结果
-if ($status == 0){
-    // 成功
-//    $data = [];
-//    foreach ($result as $item) {
-//        // 去掉首尾空格
-//        $str = trim($item);
-//        // 分割成数组
-//        $array = explode(" ",$str);
-//
-//        $fileTime = "";
-//        $fileName = "";
-//        if (count($array) > 3){
-//            $fileTime = $array[1]." ".$array[2];
-//            $fileName = $array[3];
-//        }
-//        $data[$fileTime] = $fileName;
-//    }
+echo $returnCode;
+echo "<pre>";
+var_dump($result);
 
 
-    echo "成功<br>";
-    echo "<pre>";
-    var_dump($result);
-    var_dump("结果:".$re);
-}else {
-    // 失败
-    echo "失败<br>";
-    echo "<pre>";
-    var_dump($result);
-    echo "结果:<br>";
-    var_dump($re);
-}
