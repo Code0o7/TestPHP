@@ -1,11 +1,15 @@
 <?php
 
-$cmd = 'gclone copy GSuiteTeam:{1UKB8f4tQaIfUhYFTvIFxbBaVt4dxTel3} '
+$cmd = 'gclone copy GSuiteTeam:{1UKB8f4tQaIfUhYFTvIFxbBaVt4dxTel3} GSuiteTeam:test --drive-server-side-across-configs -P';
 exec($cmd,$result,$status);
 $success = $status == 0 ? true : false;
-return [
-    "success"   =>  $success,
-    "result"    =>  $result
-];
+if ($success){
+    echo "成功";
+    echo "<pre>";
+    var_dump($result);
+}else {
+    echo "失败";
+}
+
 
 
