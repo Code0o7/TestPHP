@@ -5,7 +5,7 @@ $url = 'https://drive.google.com/drive/folders/1UKB8f4tQaIfUhYFTvIFxbBaVt4dxTel3
 //1. 初始化curl请求
 $ch = curl_init();
 //2. 设置请求的服务器地址
-curl_setopt($ch,CURLOPT_URL,$this->url);
+curl_setopt($ch,CURLOPT_URL,$url);
 //3. 不管get、post，都跳过证书验证
 curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
 curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,false);
