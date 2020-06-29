@@ -1,6 +1,6 @@
 <?php
 
-$cmd = 'php ./test.php';
+$cmd = 'php ./test.php 123 456';
 
 exec($cmd,$result,$status);
 $success = $status == 0 ? true : false;
