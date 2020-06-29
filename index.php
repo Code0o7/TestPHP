@@ -1,9 +1,6 @@
 <?php
 
-$cmd = 'gclone copy GDSuiteTeam:{1EnLOM8-Cvh9SkKIfft9Nq921PnX1JnHQ} GDSuiteTeam:test --drive-server-side-across-configs -P';
-$cmd .= " >> /www/wwwroot/test.yycode.ml/test.txt 2>&1 &";
-echo $cmd;
-die;
+$cmd = 'php ./test.php';
 
 exec($cmd,$result,$status);
 $success = $status == 0 ? true : false;
@@ -16,6 +13,13 @@ if ($success){
     echo "<pre>";
     var_dump($result);
 }
+die;
+
+$path = "/Users/mrchen/Desktop/fileTransferPro.txt";
+$content = file_get_contents($path);
+$content = base64_encode($content);
+
+echo json_encode(["code"=>200,"message"=>"","content"=>$content]);
 
 
 

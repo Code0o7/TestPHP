@@ -54,7 +54,7 @@ function sendRequest(url,successFunc=null,failFunc=null,showToast=false,hud=true
         cache : false,
         async : true,
         timeout: 10000,
-        dataType : "json",
+        dataType : "text",
         beforeSend:function (jqxhr,settings) {
             jqxhr.requestURL = url;
         },
@@ -65,15 +65,8 @@ function sendRequest(url,successFunc=null,failFunc=null,showToast=false,hud=true
             }
         }
         ,success: function (data,state,xhr) {
-            var message = typeof(data.data) == 'string' ? data.data : data.message;
-            if (data.code == 200){
-                showToast ? toast(message) : "";
-                successFunc ? successFunc(data) : "";
-
-            }else if(data.code != 200){
-                // 提示失败信息
-                toast(message,false);
-            }
+            console.log("请求成功");
+            successFunc ? successFunc(data) : "";
         },
         error: function (xhr,textStatus,errorMessage) {
             console.log("请求失败:" + errorMessage);
