@@ -2,60 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./layui/css/layui.css">
+    <title>test</title>
     <style>
 
     </style>
 </head>
 <body>
-<div class="image-box" id="image_box">
-    <ul>
-        <li>
-            <img src="http://www.accountmanager.com/admin/resource/attachmentImages/1.jpg">
-        </li>
-        <li>
-            <img src="http://www.accountmanager.com/admin/resource/attachmentImages/2.jpg">
-        </li>
-        <li>
-            <img src="http://www.accountmanager.com/admin/resource/attachmentImages/3.jpg">
-        </li>
-        <li>
-            <img src="http://www.accountmanager.com/admin/resource/attachmentImages/4.jpg">
-        </li>
-        <li>
-            <img src="http://www.accountmanager.com/admin/resource/attachmentImages/5.jpg">
-        </li>
-    </ul>
-</div>
+<p>test</p>
 </body>
 </html>
-<script src="jquery.min.js"></script>
-<script src="./layui/layui.js"></script>
-<script>
-    layui.use('layer',function () {
-        var layer = layui.layer;
-        $.ajax({
-            type : "get",
-            url : "http://www.accountmanager.com/?m=admin&c=API_Attachment&a=loadAttachmentLists&API=&id=1&tbName=acc_account",
-            data: "",
-            cache : false,
-            async : true,
-            timeout: 10000,
-            dataType : "json",
-            complete: function () {
-                console.log("加载完成");
-            }
-            ,success: function (data,state,xhr) {
-                layer.photos({
-                    photos:data.data
-                    ,anim: 5
-                })
-            },
-            error: function (xhr,textStatus,errorMessage) {
-                console.log("请求失败了偶尔Lee:" + errorMessage);
-            }
-        });
-    });
-
-</script>
