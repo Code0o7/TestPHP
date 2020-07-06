@@ -1,7 +1,7 @@
 <?php
 
 $path = "我的数据/备份数据/db/";
-$cmd = "rclone moveto ./test/ GDSuite:".$path;
+$cmd = "rclone moveto /www/wwwroot/test.yycode.ml/test/ GDSuite:".$path;
 exec($cmd.' 2>&1',$result,$status);
 $success = $status == 0 ? true : false;
 
