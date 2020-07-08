@@ -1,11 +1,9 @@
 <?php
 
-//$path = "/Users/mrchen/Desktop/test.txt";
-//file_put_contents($path,"");
-//file_put_contents($path,json_encode($_POST));
-//for ($i = 0; $i < 10;$i++){
-//    file_put_contents($path,$i,FILE_APPEND);
-//    sleep(5);
-//}
+$startTime = $this->getime();
+for ($i=0;$i<100;$i++){
+    print "<!--1234567890#########0#########0#########0#########0#########0#########0#########0#########012345-->";
+}
+$timea = $this->getime() - $startTime;
 
-echo "你好:".$argv[1]."--".$argv[2];
+echo "耗时：".$timea."ms";
