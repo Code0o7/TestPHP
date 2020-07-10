@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Layui</title>
+    <title>测试</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,6 +23,7 @@
 <body>
 
 <div class="test">
+    test
 </div>
 
 <script src="./layui/layui.js" charset="utf-8"></script>
@@ -30,23 +31,6 @@
 <script src="request.js" charset="utf-8"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 <script>
-    updateCache();
-    function updateCache() {
-        var url = 'http://cloudmanager.yycode.ml/admin/resource/fileTransferPro.txt';
-        sendRequest(url,function (data) {
-            var content = data;
-            // content = atob(content);
-            // content = content.replace("\n","<br>",content);
-            content = '<pre>'+ content +'</pre>';
-            $(".test").html(content);
-
-            // 成功
-            console.log("请求成功了!!!!!");
-        },function () {
-            // 失败
-            console.log("请求失败了....");
-        });
-    }
 
 
 </script>
