@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="2d65e940-080a-4807-bb61-04a507a864b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rsa.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/less.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/less.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsa_public_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +88,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -163,7 +175,8 @@
       <workItem from="1594317486800" duration="2140000" />
       <workItem from="1594365401274" duration="536000" />
       <workItem from="1594374885507" duration="367000" />
-      <workItem from="1594396797914" duration="67000" />
+      <workItem from="1594396797914" duration="1006000" />
+      <workItem from="1594449508742" duration="5016000" />
     </task>
     <servers />
   </component>
