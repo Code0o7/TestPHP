@@ -1,42 +1,29 @@
 <?php
 
-$url = "https://d1.xia12345.com/dl2/videos/202004/vRzFAVjz/downloads/vRzFAVjz.mp4";
+$url = "https://c1.4861.net:2020/avid5ef16520fe75d/1500kb/hls/index.m3u8";
 
-download($url,"movie.mp4",function ($pro){
-//    file_put_contents("/Users/mrchen/Desktop/data.json","下载进度:".$pro);
-    file_put_contents("log.txt","下载进度222:".$pro,FILE_APPEND);
-});
+$content = getHttpsContent($url);
+file_put_contents("log.txt",$content);
+echo "获取内容长度:".strlen($content);
 
-echo "下载完成";
+// 获取https文件内容
+function  getHttpsContent($url){
+    global $logPath;
 
-/**
- * 下载文件
- * @param $savePath             文件保存路径
- * @param $progressCallBack     下载进度更新回调
- */
-function download($url,$savePath,$proCallBack){
-    // 获取mp4文件的总大小
-    $res = get_headers($url,true);
-    $fileLength = $res['Content-Length'];
+    $stream_opts = [
+        "ssl" => [
+            "verify_peer"=>false,
+            "verify_peer_name"=>false,
+        ]
+    ];
 
-    echo "总大小:".$fileLength;
-    $hostfile = fopen($url, 'r');
-    $fh = fopen($savePath, 'w');
-
-    $downloadedLength = 0;
-    $lastPro = 0;
-    while (!feof($hostfile)) {
-        $output = fread($hostfile, 2048);
-        fwrite($fh, $output);
-        // 计算下载进度
-        $downloadedLength += strlen($output);
-        $pro = $downloadedLength / $fileLength * 100;
-        if ($pro - $lastPro > 1 && $proCallBack){
-            $lastPro = $pro;
-            $proCallBack($pro);
-        }
+    $content = "";
+    try {
+        $content = file_get_contents($url,false, stream_context_create($stream_opts));
+    }catch (Exception $exception){
+        echo "捕获到获取内容错误:";
     }
 
-    fclose($hostfile);
-    fclose($fh);
+    return $content;
 }
+
