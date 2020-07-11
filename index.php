@@ -4,6 +4,7 @@ $url = "https://d1.xia12345.com/dl2/videos/202004/vRzFAVjz/downloads/vRzFAVjz.mp
 
 download($url,"movie.mp4",function ($pro){
 //    file_put_contents("/Users/mrchen/Desktop/data.json","下载进度:".$pro);
+    file_put_contents("log.txt","下载进度222:".$pro,FILE_APPEND);
 });
 
 echo "下载完成";
@@ -30,13 +31,11 @@ function download($url,$savePath,$proCallBack){
         // 计算下载进度
         $downloadedLength += strlen($output);
         $pro = $downloadedLength / $fileLength * 100;
-//        if ($lastPro - $pro > 1 && $proCallBack){
-//            $lastPro = $pro;
-//            $proCallBack($pro);
-////            echo "下载进度11:".$pro."<pre>";
-//        }
-
-        file_put_contents("log.txt","下载进度222:".$pro,FILE_APPEND);
+        if ($pro - $lastPro > 1 && $proCallBack){
+            $lastPro = $pro;
+            $proCallBack($pro);
+//            echo "下载进度11:".$pro."<pre>";
+        }
     }
 
     fclose($hostfile);
