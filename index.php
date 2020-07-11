@@ -36,7 +36,7 @@ function download($url,$savePath,$proCallBack){
 ////            echo "下载进度11:".$pro."<pre>";
 //        }
 
-        file_put_contents("log.txt","下载进度222:".$pro);
+        file_put_contents("log.txt","下载进度222:".$pro,FILE_APPEND);
     }
 
     fclose($hostfile);
