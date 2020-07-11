@@ -25,16 +25,18 @@ function download($url,$savePath,$proCallBack){
     $downloadedLength = 0;
     $lastPro = 0;
     while (!feof($hostfile)) {
-        $output = fread($hostfile, 8192);
+        $output = fread($hostfile, 2048);
         fwrite($fh, $output);
         // 计算下载进度
         $downloadedLength += strlen($output);
         $pro = $downloadedLength / $fileLength * 100;
-        if ($lastPro - $pro > 1 && $proCallBack){
-            $lastPro = $pro;
-            $proCallBack($pro);
-            echo "下载进度11:".$pro."<pre>";
-        }
+//        if ($lastPro - $pro > 1 && $proCallBack){
+//            $lastPro = $pro;
+//            $proCallBack($pro);
+////            echo "下载进度11:".$pro."<pre>";
+//        }
+
+        file_put_contents("log.txt","下载进度222:".$pro);
     }
 
     fclose($hostfile);
