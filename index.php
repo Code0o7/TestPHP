@@ -34,7 +34,6 @@ function download($url,$savePath,$proCallBack){
         if ($pro - $lastPro > 1 && $proCallBack){
             $lastPro = $pro;
             $proCallBack($pro);
-//            echo "下载进度11:".$pro."<pre>";
         }
     }
 
