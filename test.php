@@ -10,6 +10,7 @@ if($result){
 }
 die;
 
+
 While($row = mysqli_fetch_assoc($result)){
     $data[] = $row['Database'];
 }
