@@ -3,7 +3,12 @@
 $db_name_php = 'web_stack_db';
 $sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
 echo "sql:".$sql;
-$link = mysqli_connect("localhost","root","199156");
+$link = new mysqli("localhost","root","199156");
+if ($link->connect_error){
+    echo "链接数据库失败";
+}else {
+    echo "链接数据库成功";
+}
 $result = mysqli_query($link,$sql);
 echo "<pre>";
 var_dump($result);
