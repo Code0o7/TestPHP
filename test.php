@@ -1,6 +1,6 @@
 <?php
 
-$db_name_php = 'web_stack_d';
+$db_name_php = 'web_stack_db';
 $sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
 echo "sql:".$sql;
 $link = new mysqli("localhost","root","199156");
@@ -15,6 +15,11 @@ if ($result){
     $res = $result -> fetch_all(MYSQLI_ASSOC);
     // 释放资源
     $result -> free();
+    if ($res){
+        echo "存在";
+    }else {
+        echo "不存在";
+    }
     echo "<pre>";
     var_dump($res);
 }else {
