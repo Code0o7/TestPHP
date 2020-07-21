@@ -4,6 +4,8 @@ $db_name_php = 'books';
 $sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
 $link = mysqli_connect("localhost","root","199156");
 $result = mysqli_query($link,$sql);
+echo "<pre>";
+var_dump($result);
 if($result){
     echo "存在";
 }else {
