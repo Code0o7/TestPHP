@@ -1,6 +1,6 @@
 <?php
 
-$db_name_php = 'web_stack_db';
+$db_name_php = 'web_stack_d';
 $sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
 echo "sql:".$sql;
 $link = new mysqli("localhost","root","199156");
