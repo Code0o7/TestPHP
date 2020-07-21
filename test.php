@@ -9,6 +9,21 @@ if ($link->connect_error){
 }else {
     echo "链接数据库成功";
 }
+$result = $link -> query($sql);
+if ($result){
+    // 获取所有行数据 只要关联数组
+    $res = $result -> fetch_all(MYSQLI_ASSOC);
+    // 释放资源
+    $result -> free();
+    echo "<pre>";
+    var_dump($res);
+}else {
+    // 查询失败
+    echo "查询失败,错误如下:".$link -> error;
+    $result -> free();
+}
+die;
+
 $result = mysqli_query($link,$sql);
 echo "<pre>";
 var_dump($result);
