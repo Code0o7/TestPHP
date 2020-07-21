@@ -1,16 +1,22 @@
 <?php
 
-$arr = [["id"=>"2","sort"=>"4"],["id"=>"1","sort"=>"2"],["id"=>"4","sort"=>"1"],["id"=>"3","sort"=>"3"]];
-$sort = [];
-foreach ($arr as $item) {
-    $sort[] = $item["sort"];
+$db_name_php = 'books';
+$sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
+$result = mysqli_query($sql);
+if($result){
+    echo "存在";
+}else {
+    echo "不存在";
 }
-echo "<pre>";
-echo "arr:";
-var_dump($arr);
-echo "sort:";
-var_dump($sort);
-array_multisort($sort, SORT_ASC, $arr);
+die;
 
-echo "<pre>";
-var_dump($arr);
+While($row = mysqli_fetch_assoc($result)){
+    $data[] = $row['Database'];
+}
+unset($result, $row);
+mysqli_close();
+
+if (in_array(strtolower($db_name_php), $data))
+    echo '[',$db_name_php,']数据库存在';
+else
+    echo '[',$db_name_php,']数据库不存在';
