@@ -2,6 +2,7 @@
 
 $db_name_php = 'web_stack_db';
 $sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
+echo "sql:".$sql;
 $link = mysqli_connect("localhost","root","199156");
 $result = mysqli_query($link,$sql);
 echo "<pre>";
