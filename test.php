@@ -1,32 +1,7 @@
 <?php
 
-$db_name_php = 'web_stack_d';
-$sql = "SELECT * FROM information_schema.SCHEMATA where SCHEMA_NAME='".$db_name_php."'";
-echo "sql:".$sql;
-$link = new mysqli("localhost","root","199156");
-if ($link->connect_error){
-    echo "链接数据库失败";
-}else {
-    echo "链接数据库成功";
-}
-$result = $link -> query($sql);
-if ($result){
-    // 获取所有行数据 只要关联数组
-    $res = $result -> fetch_all(MYSQLI_ASSOC);
-    // 释放资源
-    $result -> free();
-    if ($res){
-        echo "存在";
-    }else {
-        echo "不存在";
-    }
-    echo "<pre>";
-    var_dump($res);
-}else {
-    // 查询失败
-    echo "查询失败,错误如下:".$link -> error;
-    $result -> free();
-}
+
+
 die;
 
 $result = mysqli_query($link,$sql);
