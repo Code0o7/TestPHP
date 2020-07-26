@@ -7,6 +7,8 @@ if ($res["success"]){
     echo "转换成功";
 }else {
     echo "转换失败";
+    echo "<pre>";
+    var_dump($res);
 }
 
 // 执行shell命令
