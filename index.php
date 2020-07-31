@@ -20,8 +20,7 @@ function get_server_memory_usage(){
 function get_server_cpu_usage(){
 
     $load = sys_getloadavg();
-    return $load[0];
-
+    return $load;
 }
 
 
