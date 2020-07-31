@@ -3,43 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>测试</title>
-    <link rel="stylesheet" href="layui/css/layui.css">
 </head>
 <body>
-
-<form class="layui-form layui-form-pane" action="">
-    <div class="layui-form-item">
-        <div class="layui-form-item layui-form-text">
-            <label class="layui-form-label">备注</label>
-            <div class="layui-input-block">
-                <textarea style="resize: none;height: 200px" id="acc_remark" placeholder="暂无备注" class="layui-textarea"></textarea>
-            </div>
-        </div>
-        <div class="layui-form-item layui-form-text">
-            <label class="layui-form-label">备注2</label>
-            <div class="layui-input-block">
-                <textarea readonly="readonly" style="resize: none;height: 200px" id="acc2_remark" placeholder="暂无备注" class="layui-textarea"></textarea>
-            </div>
-        </div>
-    </div>
-</form>
-
+测试文本
 </body>
 </html>
-<script src="static/jquery.min.js" charset="utf-8"></script>
-<script src="layui/layui.js" charset="utf-8"></script>
-<script>
-    $(document).ready(function () {
-        layui.use("form",function () {
-            var form = layui.form;
-
-            // 监听输入排序
-            var catSortInput = $("#acc_remark");
-            catSortInput.bind("input propertychange", function (event) {
-                var remark = catSortInput.val();
-                $("#acc2_remark").val(remark);
-            });
-
-        });
-    });
-</script>
