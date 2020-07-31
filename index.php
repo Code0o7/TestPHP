@@ -1,7 +1,7 @@
 <?php
 
 echo get_server_memory_usage();
-echo "<bbr>";
+echo "<br>";
 echo get_server_cpu_usage();
 
 function get_server_memory_usage(){
