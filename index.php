@@ -25,7 +25,7 @@ function get_used_status(){
     $cpu_usage = trim(trim($cpu_info[0],'Cpu(s): '),'%us');  //百分比
 
     echo "<pre>";
-    var_dump($mem_info);
+    var_dump($sys_info);
     die;
     
     //内存占有量
