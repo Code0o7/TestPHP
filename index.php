@@ -6,6 +6,11 @@ get_used_status();
 
 function get_used_status(){
     $fp = popen('top -b -n 2 | grep -E "(Cpu\(s\))|(KiB Mem)"',"r");//获取某一时刻系统cpu和内存使用情况
+
+    echo "<pre>";
+    var_dump($fp);
+    die;
+    
     $sys_info = explode("\n", $fp);
     $cpu_info = explode(",", $sys_info[2]);
     $cpu_usage = trim(trim($cpu_info[0], '%Cpu(s): '), 'us'); //百分比
