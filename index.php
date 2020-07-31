@@ -1,32 +1,10 @@
 <?php
 
-var_dump(get_server_memory_usage());
-echo "<br>";
-var_dump(get_server_cpu_usage());
-
-function get_server_memory_usage(){
-
-    $free = shell_exec('free');
-    $free = (string)trim($free);
-    $free_arr = explode("\n", $free);
-    $mem = explode(" ", $free_arr[1]);
-    $mem = array_filter($mem);
-    $mem = array_merge($mem);
-    $memory_usage = $mem[2]/$mem[1]*100;
-
-    return $memory_usage;
-}
-
-function get_server_cpu_usage(){
-
-    $load = sys_getloadavg();
-    return $load;
-}
-
-
+echo "<pre>";
+var_dump(get_used_status);
 
 function get_used_status(){
-    $fp = popen('top -b -n 2 | grep -E "^(Cpu|Mem|Tasks)"',"r");//获取某一时刻系统cpu和内存使用情况
+    $fp = popen('top -b -n 2 | grep -E "(Cpu\(s\))|(KiB Mem)"',"r");//获取某一时刻系统cpu和内存使用情况
     $rs = "";
     while(!feof($fp)){
         $rs .= fread($fp,1024);
@@ -44,10 +22,6 @@ function get_used_status(){
 
     //CPU占有量
     $cpu_usage = trim(trim($cpu_info[0],'Cpu(s): '),'%us');  //百分比
-
-    echo "<pre>";
-    var_dump($sys_info);
-    die;
     
     //内存占有量
     $mem_total = trim(trim($mem_info[0],'Mem: '),'k total');
