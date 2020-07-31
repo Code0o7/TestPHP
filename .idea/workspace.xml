@@ -173,7 +173,7 @@
       <workItem from="1595785382903" duration="1088000" />
       <workItem from="1596000990171" duration="553000" />
       <workItem from="1596162611892" duration="1010000" />
-      <workItem from="1596167765408" duration="22000" />
+      <workItem from="1596167765408" duration="604000" />
     </task>
     <servers />
   </component>
@@ -181,31 +181,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="312" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587362269467">
-      <screen x="0" y="23" width="1680" height="961" />
-    </state>
-    <state x="549" y="312" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.961@0.23.1680.961" timestamp="1587362269467" />
-    <state x="593" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587110598095">
-      <screen x="0" y="23" width="1680" height="961" />
-    </state>
-    <state x="593" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.961@0.23.1680.961" timestamp="1587110598095" />
-    <state x="582" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586537142679">
-      <screen x="0" y="23" width="1680" height="961" />
-    </state>
-    <state x="582" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.961@0.23.1680.961" timestamp="1586537142679" />
-    <state x="416" y="297" key="EditFileWatcherDialog" timestamp="1586687502054">
-      <screen x="0" y="23" width="1680" height="961" />
-    </state>
-    <state x="416" y="297" key="EditFileWatcherDialog/0.23.1680.961@0.23.1680.961" timestamp="1586687502054" />
     <state x="609" y="337" key="NewPhpClassDialog" timestamp="1591760525178">
       <screen x="0" y="23" width="1680" height="978" />
     </state>
-    <state x="609" y="332" key="NewPhpClassDialog/0.23.1680.961@0.23.1680.961" timestamp="1587110576568" />
     <state x="609" y="337" key="NewPhpClassDialog/0.23.1680.978@0.23.1680.978" timestamp="1591760525178" />
     <state x="673" y="442" key="NewPhpFileDialog" timestamp="1594067190240">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="673" y="436" key="NewPhpFileDialog/0.23.1680.961@0.23.1680.961" timestamp="1587384813459" />
     <state x="673" y="437" key="NewPhpFileDialog/0.23.1680.963@0.23.1680.963" timestamp="1587891312329" />
     <state x="673" y="438" key="NewPhpFileDialog/0.23.1680.965@0.23.1680.965" timestamp="1589112266683" />
     <state x="673" y="439" key="NewPhpFileDialog/0.23.1680.967@0.23.1680.967" timestamp="1589904349224" />
@@ -213,18 +195,16 @@
     <state x="520" y="269" width="689" height="475" key="find.popup" timestamp="1590009607307">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state x="520" y="267" width="689" height="472" key="find.popup/0.23.1680.961@0.23.1680.961" timestamp="1586854392352" />
     <state x="520" y="269" width="689" height="475" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1590009607307" />
     <state x="508" y="231" key="run.anything.popup" timestamp="1589537505201">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="508" y="231" key="run.anything.popup/0.23.1680.967@0.23.1680.967" timestamp="1589537505201" />
-    <state x="509" y="235" width="670" height="686" key="search.everywhere.popup" timestamp="1593101278865">
+    <state x="509" y="235" width="670" height="686" key="search.everywhere.popup" timestamp="1596168398841">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="509" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.961@0.23.1680.961" timestamp="1586857081449" />
     <state x="509" y="234" width="670" height="681" key="search.everywhere.popup/0.23.1680.967@0.23.1680.967" timestamp="1589265261277" />
-    <state x="509" y="235" width="670" height="686" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1593101278865" />
+    <state x="509" y="235" width="670" height="686" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1596168398841" />
     <state x="509" y="236" width="670" height="689" key="search.everywhere.popup/0.23.1680.978@0.23.1680.978" timestamp="1591761376304" />
     <state x="509" y="236" width="670" height="690" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1591776132640" />
   </component>
