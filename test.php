@@ -19,7 +19,9 @@ function getDirInfoInDir($dirPath){
             if ($filename != "." && $filename != ".." && is_dir($dirPath.$filename)) {
                 // 获取文件夹创建时间
                 $filetime = filectime($dirPath.$filename);
-
+                if ($filetime !== false){
+                    $filetime = date("Y-m-d H:i:s",$filetime);
+                }
                 //文件修改时间作为健值
                 if (array_key_exists($filetime,$files)){
                     // 已经有相同时间上传的图片
