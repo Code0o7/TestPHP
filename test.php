@@ -2,6 +2,7 @@
 
 $path = "/www/wwwroot/res.yycode.ml/blogImages";
 $res = getFilesInDir($path);
+echo "<pre>";
 var_dump($res);
 
 /**
