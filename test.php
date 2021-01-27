@@ -21,6 +21,8 @@ function getDirInfoInDir($dirPath){
                 $filetime = filectime($dirPath.$filename);
                 if ($filetime !== false){
                     $filetime = date("Y-m-d H:i:s",$filetime);
+                }else {
+//                    $filetime =
                 }
 
                 //文件修改时间作为健值
@@ -41,6 +43,9 @@ function getDirInfoInDir($dirPath){
         }
         closedir($handler);
 
+        echo "<pre>";
+        var_dump($files);
+
         // key按照时间排序
         $data = [];
         ksort($files);
@@ -53,9 +58,6 @@ function getDirInfoInDir($dirPath){
                 $data[] = $item;
             }
         }
-
-        echo "<pre>";
-        var_dump($data);
 
         // 数组倒序
         $data = array_reverse($data);
