@@ -1,6 +1,6 @@
 <?php
 
-$path = "/www/wwwroot/res.yycode.ml/blogImages";
+$path = "/www/wwwroot/res.yycode.ml/blogImages/";
 $res = getFilesInDir($path);
 echo "<pre>";
 var_dump($res);
@@ -15,7 +15,7 @@ function getFilesInDir($dir){
     $files = [];
     if ($handler){
         while (($filename = readdir($handler)) !== false) {//务必使用!==，防止目录下出现类似文件名“0”等情况
-            if ($filename != "." && $filename != "..") {
+            if ($filename != "." && $filename != ".." && is_dir($dir.$filename)) {
                 $files[] = $filename;
             }
         }
