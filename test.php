@@ -23,23 +23,23 @@ function getDirInfoInDir($dirPath){
                     $filetime = date("Y-m-d H:i:s",$filetime);
                 }
 
-                echo "<pre>";
-                var_dump($filetime);
-
                 //文件修改时间作为健值
-//                if (array_key_exists($filetime,$files)){
-//                    // 已经有相同时间上传的图片
-//                    $existsValue = $files[$filetime];
-//                    if (is_array($existsValue)){
-//                        $existsValue[] = $filename;
-//                        $files[$filetime] = $existsValue;
-//                    }else {
-//                        $files[$filetime] = [$existsValue,$filename];
-//                    }
-//                }else {
-//                    // 没有该时间上传的图片
-//                    $files[$filetime] = $filename;
-//                }
+                if (array_key_exists($filetime,$files)){
+                    // 已经有相同时间上传的图片
+                    $existsValue = $files[$filetime];
+                    if (is_array($existsValue)){
+                        $existsValue[] = $filename;
+                        $files[$filetime] = $existsValue;
+                    }else {
+                        $files[$filetime] = [$existsValue,$filename];
+                    }
+                }else {
+                    // 没有该时间上传的图片
+                    $files[$filetime] = $filename;
+                }
+
+                echo "<pre>";
+                var_dump($files);
             }
         }
         closedir($handler);
