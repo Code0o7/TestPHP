@@ -55,5 +55,5 @@ function getDirInfoInDir($dirPath){
         $data = array_reverse($data);
     }
 
-    return $data;
+    return $files;
 }
