@@ -37,9 +37,6 @@ function getDirInfoInDir($dirPath){
                     // 没有该时间上传的图片
                     $files[$filetime] = $filename;
                 }
-
-                echo "<pre>";
-                var_dump($files);
             }
         }
         closedir($handler);
@@ -56,6 +53,9 @@ function getDirInfoInDir($dirPath){
                 $data[] = $item;
             }
         }
+
+        echo "<pre>";
+        var_dump($data);
 
         // 数组倒序
         $data = array_reverse($data);
