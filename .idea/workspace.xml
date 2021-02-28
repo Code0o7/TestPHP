@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d65e940-080a-4807-bb61-04a507a864b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +183,10 @@
       <workItem from="1612084693184" duration="7000" />
       <workItem from="1612084786679" duration="49000" />
       <workItem from="1612663759140" duration="138000" />
-      <workItem from="1612667610874" duration="1645000" />
+      <workItem from="1612667610874" duration="2933000" />
+      <workItem from="1612782129286" duration="601000" />
+      <workItem from="1612786941695" duration="2223000" />
+      <workItem from="1614478560869" duration="22000" />
     </task>
     <servers />
   </component>
@@ -189,31 +194,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="609" y="337" key="NewPhpClassDialog" timestamp="1591760525178">
-      <screen x="0" y="23" width="1680" height="978" />
-    </state>
-    <state x="609" y="337" key="NewPhpClassDialog/0.23.1680.978@0.23.1680.978" timestamp="1591760525178" />
-    <state x="673" y="442" key="NewPhpFileDialog" timestamp="1594067190240">
+    <state x="497" y="266" width="675" height="472" key="find.popup" timestamp="1614478580650">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="673" y="437" key="NewPhpFileDialog/0.23.1680.963@0.23.1680.963" timestamp="1587891312329" />
-    <state x="673" y="438" key="NewPhpFileDialog/0.23.1680.965@0.23.1680.965" timestamp="1589112266683" />
-    <state x="673" y="439" key="NewPhpFileDialog/0.23.1680.967@0.23.1680.967" timestamp="1589904349224" />
-    <state x="673" y="442" key="NewPhpFileDialog/0.23.1680.973@0.23.1680.973" timestamp="1594067190240" />
-    <state x="520" y="269" width="689" height="475" key="find.popup" timestamp="1590009607307">
-      <screen x="0" y="23" width="1680" height="967" />
-    </state>
-    <state x="520" y="269" width="689" height="475" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1590009607307" />
-    <state x="508" y="231" key="run.anything.popup" timestamp="1589537505201">
-      <screen x="0" y="23" width="1680" height="967" />
-    </state>
-    <state x="508" y="231" key="run.anything.popup/0.23.1680.967@0.23.1680.967" timestamp="1589537505201" />
-    <state x="509" y="235" width="670" height="686" key="search.everywhere.popup" timestamp="1596168398841">
-      <screen x="0" y="23" width="1680" height="973" />
-    </state>
-    <state x="509" y="234" width="670" height="681" key="search.everywhere.popup/0.23.1680.967@0.23.1680.967" timestamp="1589265261277" />
-    <state x="509" y="235" width="670" height="686" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1596168398841" />
-    <state x="509" y="236" width="670" height="689" key="search.everywhere.popup/0.23.1680.978@0.23.1680.978" timestamp="1591761376304" />
-    <state x="509" y="236" width="670" height="690" key="search.everywhere.popup/0.23.1680.979@0.23.1680.979" timestamp="1591776132640" />
+    <state x="497" y="266" width="675" height="472" key="find.popup/0.23.1680.973@0.23.1680.973" timestamp="1614478580650" />
   </component>
 </project>
