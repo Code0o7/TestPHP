@@ -14,6 +14,7 @@ function contentDecode($content){
     return $str2;
 }
 
+
 $str = "勧恅澔繎悧憟鹑亝蠜姳肁庈蠫苲實疟赟躪噞嬶ﾌ枀咎轘繙亊丆￞";
 echo contentDecode($str);
 
