@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d65e940-080a-4807-bb61-04a507a864b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iptv.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +188,12 @@
       <workItem from="1612786941695" duration="2223000" />
       <workItem from="1614478560869" duration="22000" />
       <workItem from="1616165166164" duration="6000" />
+      <workItem from="1616927381093" duration="6698000" />
+      <workItem from="1617021711880" duration="2672000" />
+      <workItem from="1617277671855" duration="319000" />
+      <workItem from="1617545411985" duration="1593000" />
+      <workItem from="1620033253921" duration="5956000" />
+      <workItem from="1625976812300" duration="2008000" />
     </task>
     <servers />
   </component>
@@ -193,6 +201,16 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="562" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616931888649">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state x="562" y="265" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.974@0.23.1680.974" timestamp="1616931888649" />
+    <state x="642" y="434" key="NewPhpFileDialog" timestamp="1620034260762">
+      <screen x="0" y="25" width="1680" height="964" />
+    </state>
+    <state x="642" y="436" key="NewPhpFileDialog/0.23.1680.973@0.23.1680.973" timestamp="1617021749614" />
+    <state x="642" y="436" key="NewPhpFileDialog/0.23.1680.974@0.23.1680.974" timestamp="1616930943171" />
+    <state x="642" y="434" key="NewPhpFileDialog/0.25.1680.964@0.25.1680.964" timestamp="1620034260762" />
     <state x="497" y="266" width="675" height="472" key="find.popup" timestamp="1614478580650">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
